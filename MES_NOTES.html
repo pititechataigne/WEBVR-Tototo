@@ -1,0 +1,68 @@
+
+<!-- NOTES--> <!-- RAPPELS-->
+
+
+
+<!-- EXEMPLE DE CODE POUR AFFICHER DES TITRES
+<html>
+
+  <head>
+     
+
+    <style>
+        p{color: blue; font-size :2em;}
+        #entete { color:red; font-style:italic; } /*id*/
+        .blabla { color : green; } /*class*/
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1>RAPPEL HTML</h1>
+      <p id="entete">texte1</p>
+      <p class="blabla">texte2</p>
+      <p class="blabla">texte3</p>
+      <p class="blabla">texte4</p>
+
+       <a-assets>
+        <img id="eau" src="./assets/images/texture_eau.jpeg">
+      </a-assets>
+      
+      </a-scene>
+
+</body>
+
+</html>
+-->
+
+
+
+<!-- NOTEpour déplacer tout ou plusieurs elements à la fois-->
+           <!-- 
+
+          <a-entity position= "0 0 0 "> 
+           mettre ici tout mes objt et entités de la section formes que je veux déplacer  
+          </a-entity>
+
+          -->
+
+<!-- NOTEpour faire une MIXINS-->
+          <!-- 
+             On créer une ou plusieurs propriétes que je veux appliquer avec une mixin (ex: il sera bleu, de tel metres, ect..) puis on ajoute l'id mixine aux obj ou entité auquel la liste de propriétés vont s'appliquer
+             EXEMPLE :
+
+             1)ds mes asset je crée ma mixin
+
+                  <a-assets>
+                  <a-mixin id="mur" material="color: red" position="-1 0.5 -3" rotation="0 45 0" ></a-mixin>
+                  </a-assets>
+            
+            2)ds les obj a qui je veux appliquer ma liste de proprietes
+
+                  <a-box  mixin="mur" ></a-box>
+
+
+          -->
+                  

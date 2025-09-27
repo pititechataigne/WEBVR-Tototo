@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.2/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
+  </head>
+</head>
+
+<body>
+
+    <a-scene physics background="color: white">
+       
+        <a-assets>
+            <a-asset-item id="glbmodel" src="./assets/3Dmodels/exp3_obj_skull/skull.glb"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#glbmodel" position="0 0 -5" scale="0.1 0.1 0.1" rotation="-90 -30 0"></a-entity>
+
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="silver"></a-plane>    
+        <a-sky color="#ECECEC"></a-sky>
+    
+    
+    
+    </a-scene>
+
+</body>
+
+</html>

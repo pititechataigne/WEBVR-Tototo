@@ -1,0 +1,125 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script> 
+    <!-- site pour A frame -->
+  </head>
+
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+        <img id="eau" src="./assets/images/texture_eau.jpeg">
+        <img id="ARRIVEE" src="./assets/images/chat_arrived.jpg">
+        <img id="DEPART" src="./assets/images/chat_start.jpg">
+      </a-assets>
+
+   
+      <!-- NOTES-->
+           
+           <!-- NOTEpour déplacer tout ou plusieurs elements à la fois-->
+           <!-- 
+
+          <a-entity position= "0 0 0 "> 
+           mettre ici tout mes objt et entités de la section formes que je veux déplacer  
+          </a-entity>
+
+          -->
+
+          <!-- NOTEpour faire une MIXINS-->
+          <!-- 
+             On créer une ou plusieurs propriétes que je veux appliquer avec une mixin (ex: il sera bleu, de tel metres, ect..) puis on ajoute l'id mixine aux obj ou entité auquel la liste de propriétés vont s'appliquer
+             EXEMPLE :
+
+             1)ds mes asset je crée ma mixin
+
+                  <a-assets>
+                  <a-mixin id="mur" material="color: red" position="-1 0.5 -3" rotation="0 45 0" ></a-mixin>
+                  </a-assets>
+            
+            2)ds les obj a qui je veux appliquer ma liste de proprietes
+
+                  <a-box  mixin="mur" ></a-box>
+
+
+          -->
+                  
+
+
+   <!--formes -->
+  
+    <a-entity position="0.43 0 4.09"> 
+
+    
+
+      <a-plane id="A" src="#eau" material="side: double" position="0.65247 1.4902 -5.99893" rotation="0 180 0" width="4" height="3" color="#7BC8A4" geometry="width: 2.72">
+      </a-plane>
+      <a-plane id="B" src="#eau" material="side: double" position="0 1.51317 -2.02039" rotation="0 180 0" width="4" height="3" color="#7BC8A4">
+      </a-plane>
+    
+      
+      <a-plane id="C" src="#eau" material="side: double" position="2.00435 1.49423 -4" rotation="0 90 0" width="4" height="3" color="#7BC8A4">
+       </a-plane>
+    
+      <a-plane id="D" src="#eau" material="side: double" position="-1.99526 1.49296 -4" rotation="0 -90 0" width="4" height="3" color="#7BC8A4">
+        </a-plane>
+       
+        <a-plane id="E" src="#eau" material="side: double" position="-1.42135 1.48425 -5.01269" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 1.99">
+         </a-plane>
+        <a-plane id="F" src="#eau" material="side: double" position="-0.266 1.50881 -3.30429" rotation="0 180 0" width="4" height="3" color="#7BC8A4" geometry="width: 2.31">
+         </a-plane>
+        <a-plane id="G" src="#eau" material="side: double" position="0.88883 1.48425 -3.94355" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 2.99">
+         </a-plane>
+        <a-plane id="H" src="#eau" material="side: double" position="-1.42135 1.48425 -5.01269" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 1.99">
+         </a-plane>
+          <a-plane id="I" src="#eau" material="side: double" position="-1.42135 1.48425 -2.98917" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.64">
+         </a-plane>
+         <a-plane id="J" src="#eau" material="side: double" position="-0.26463 1.48425 -5.43668" rotation="0 -180 0" width="4" height="3" color="#7BC8A4" geometry="width: 2.31">
+         </a-plane>
+         <a-plane id="K" src="#eau" material="side: double" position="1.4333 1.48425 -3.98386" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 2.74">
+         </a-plane>
+          <a-plane id="L" src="#eau" material="side: double" position="1.72184 1.48425 -4.05342" rotation="0 -180 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.57">
+         </a-plane>
+          <a-plane id="M" src="#eau" material="side: double" position="-0.25597 1.48425 -2.42311" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.83">
+         </a-plane>
+          <a-plane id="N" src="#eau" material="side: double" position="-0.75345 1.48425 -3.95209" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 1.3">
+         </a-plane>
+          <a-plane id="O" src="#eau" material="side: double" position="-0.01848 1.48425 -4.3034" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.63">
+         </a-plane>
+          <a-plane id="P" src="#eau" material="side: double" position="-0.38038 1.48425 -4.59909" rotation="0 -180 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.74">
+         </a-plane>
+          <a-plane id="Q" src="#eau" material="side: double" position="-0.25971 1.48425 -2.837" rotation="0 -180 0" width="4" height="3" color="#7BC8A4" geometry="width: 1.22">
+         </a-plane>
+          <a-plane id="R" src="#eau" material="side: double" position="-1.70538 1.48425 -6.00146" rotation="0 -180 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.59">
+         </a-plane>
+          <a-plane id="S" src="#eau" material="side: double" position="-0.8687 1.48425 -2.6619" rotation="0 -90 0" width="4" height="3" color="#7BC8A4" geometry="width: 0.35">
+         </a-plane>
+         
+         <a-plane id="DEPART" src="#DEPART" material="side: double" position="-0.39654 1.64118 -4.58668" rotation="0 0.6531718864491385 0" width="4" height="3" color="#7BC8A4" geometry="height: 0.68; width: 0.54">
+         </a-plane>
+
+         <a-plane id="ARRIVEE" src="#ARRIVEE" material="side: double" position="-1.08436 1.62444 -6.85711" rotation="0 0.4004974987964454 0" width="4" height="3" color="#7BC8A4" geometry="height: 0.97; width: 0.74">
+         </a-plane>
+
+      </a-entity>
+  
+      
+      
+    <!-- envirronement -->  
+    
+     <a-plane id="sol" position="0.432 0 0.06751" rotation="-90 0 0" width="4" height="4" color="#7BC8A4">
+     </a-plane>
+
+      <a-sky 
+      color="#ECECEC">
+      </a-sky>
+
+      
+    </a-scene>
+
+ </body>
+
+</html>

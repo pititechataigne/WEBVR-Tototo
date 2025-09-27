@@ -1,0 +1,31 @@
+<html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script> 
+    <!-- site pour A frame -->
+  </head>
+
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+        <img id="eau" src="./assets/images/texture_eau.jpeg">
+      </a-assets>
+
+    <!-- forme -->
+      
+
+      <a-box src="#eau" position="-1 0.5 -3" rotation="0 45 0"  scale = "0.5 0.5 0.5"></a-box>
+      
+    <!-- envirronement -->  
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+
+      
+    </a-scene>
+
+ </body>
+
+</html>
