@@ -1,0 +1,274 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script> 
+    <!-- site pour A frame -->
+  </head>
+
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+
+        <!--Mes elements 3D -->
+
+         <a-asset-item id="vitesstelimite" src="./assets/3Dmodels/speedlimitl.obj"></a-asset-item>
+         <a-asset-item id="StopSign" src="./assets/3Dmodels/StopSign.obj"></a-asset-item>
+
+
+        <!--Mes img/texture de base -->
+        <img id="eau" src="./assets/images/texture_eau.jpeg">
+        <img id="ARRIVEE" src="./assets/images/chat_arrived.jpg">
+        <img id="DEPART" src="./assets/images/chat_start.jpg">
+        <img id="texturesol" src="./assets/images/texture_brick.jpg">
+
+        <!--toutes images de chats -->
+        <img id="angrychat" src="./assets/images/imgCHATlabyrinthe2/angrychat.png">
+        <img id="chatbarbu" src="./assets/images/imgCHATlabyrinthe2/chatbarbu.jpg">
+        <img id="chatbigleux" src="./assets/images/imgCHATlabyrinthe2/chatbigleux.jpg">
+        <img id="chatblaze" src="./assets/images/imgCHATlabyrinthe2/chatblaze.jpg">
+        <img id="chatcafesoleil" src="./assets/images/imgCHATlabyrinthe2/chatcafesoleil.png">
+        <img id="chatcameraproche" src="./assets/images/imgCHATlabyrinthe2/chatcameraproche.webp">
+
+        <img id="chatcanappleure" src="./assets/images/imgCHATlabyrinthe2/chatcanappleure.jpg">
+        <img id="chatchoupi" src="./assets/images/imgCHATlabyrinthe2/chatchoupi.jpg">
+        <img id="chatcolier" src="./assets/images/imgCHATlabyrinthe2/chatcolier.jpg">
+        <img id="chatcoucou" src="./assets/images/imgCHATlabyrinthe2/chatcoucou.jpg">
+        <img id="chatcriedessus" src="./assets/images/imgCHATlabyrinthe2/chatcriedessus.jpg">
+
+
+        <img id="chatdetourassit" src="./assets/images/imgCHATlabyrinthe2/chatdetoureassit.jpg">
+        <img id="chatdiscussion" src="./assets/images/imgCHATlabyrinthe2/chatdiscussion.jpg">
+        <img id="chatencourage" src="./assets/images/imgCHATlabyrinthe2/chatencourage.jpg">
+        <img id="chatestomaque" src="./assets/images/imgCHATlabyrinthe2/chatestomaque.jpg">
+        <img id="chatfumedecote" src="./assets/images/imgCHATlabyrinthe2/chatfumedecote.jpg">
+        <img id="chatgalant" src="./assets/images/imgCHATlabyrinthe2/chatgalant.png">
+        <img id="chatgardiens" src="./assets/images/imgCHATlabyrinthe2/chatgardiens.jpg">
+        <img id="chatgroscoeur" src="./assets/images/imgCHATlabyrinthe2/chatgroscoeur.jpg">
+        <img id="chatgun" src="./assets/images/imgCHATlabyrinthe2/chatgun.png">
+        <img id="chatipadkid" src="./assets/images/imgCHATlabyrinthe2/chatipadkid.jpg">
+
+        <img id="chatjugeassit" src="./assets/images/imgCHATlabyrinthe2/chatjugeassit.jpg">
+        <img id="chatlangue" src="./assets/images/imgCHATlabyrinthe2/chatlangue.png">
+        <img id="chatlunetterondes" src="./assets/images/imgCHATlabyrinthe2/chatlunetterondes.png">
+        <img id="chatmanettetriste" src="./assets/images/imgCHATlabyrinthe2/chatmanettetriste.jpg">
+        <img id="chatmenton" src="./assets/images/imgCHATlabyrinthe2/chatmenton.jpg">
+        <img id="chatmoque" src="./assets/images/imgCHATlabyrinthe2/chatmoque.jpg">
+        <img id="chatnuit" src="./assets/images/imgCHATlabyrinthe2/chatnuit.jpg">
+        <img id="chatpanic" src="./assets/images/imgCHATlabyrinthe2/chatpanic.png">
+        <img id="chatpleurerigole2" src="./assets/images/imgCHATlabyrinthe2/chatpleurerigole2.jpg">
+        <img id="chatquivomis" src="./assets/images/imgCHATlabyrinthe2/chatquivomis.jpg">
+        <img id="chatrepas" src="./assets/images/imgCHATlabyrinthe2/chatrepas.jpg">
+
+
+        
+         <img id="chatresponsable" src="./assets/images/imgCHATlabyrinthe2/chatresponsable.jpg">
+        <img id="chatselfi" src="./assets/images/imgCHATlabyrinthe2/chatselfi.jpg">
+        <img id="chatsingevisage" src="./assets/images/imgCHATlabyrinthe2/chatsingevisage.jpg">
+        <img id="chattiktok" src="./assets/images/imgCHATlabyrinthe2/chattiktok.png">
+        <img id="chatstyle" src="./assets/images/imgCHATlabyrinthe2/chatstyle.png">
+        <img id="chattube" src="./assets/images/imgCHATlabyrinthe2/chattube.jpg">
+        <img id="chatventdessus" src="./assets/images/imgCHATlabyrinthe2/chatventdessus.jpg">
+        <img id="chatvieux" src="./assets/images/imgCHATlabyrinthe2/chatvieux.jpg">
+        <img id="chatvisage" src="./assets/images/imgCHATlabyrinthe2/chatvisage.jpg">
+        <img id="chatvomis" src="./assets/images/imgCHATlabyrinthe2/chatvomis.webp">
+        <img id="chatdroitegauche" src="./assets/images/imgCHATlabyrinthe2/chatdroitegauche.jpg">
+
+
+
+      </a-assets>
+
+  
+  
+  <a-entity id="toutmesPanneaux"position="0.43 0 4.09"> 
+
+    
+      <!--tout mes murs-->
+      <a-plane id="A" src="#eau" material="side: double" position="0.65247 1.4902 -5.99893" rotation="0 180 0" width="4" height="3"  geometry="width: 2.72">
+      </a-plane>
+      <a-plane id="B" src="#eau" material="side: double" position="0 1.51317 -2.02039" rotation="0 180 0" width="4" height="3" >
+      </a-plane>
+    
+      
+      <a-plane id="C" src="#eau" material="side: double" position="2.00435 1.49423 -4" rotation="0 90 0" width="4" height="3" >
+       </a-plane>
+    
+      <a-plane id="D" src="#eau" material="side: double" position="-1.99526 1.49296 -4" rotation="0 -90 0" width="4" height="3" >
+        </a-plane>
+       
+        <a-plane id="E" src="#eau" material="side: double" position="-1.42135 1.48425 -5.01269" rotation="0 -90 0" width="4" height="3"  geometry="width: 1.99">
+         </a-plane>
+        <a-plane id="F" src="#eau" material="side: double" position="-0.266 1.50881 -3.30429" rotation="0 180 0" width="4" height="3"  geometry="width: 2.31">
+         </a-plane>
+        <a-plane id="G" src="#eau" material="side: double" position="0.88883 1.48425 -3.94355" rotation="0 -90 0" width="4" height="3"  geometry="width: 2.99">
+         </a-plane>
+        <a-plane id="H" src="#eau" material="side: double" position="-1.42135 1.48425 -5.01269" rotation="0 -90 0" width="4" height="3"  geometry="width: 1.99">
+         </a-plane>
+          <a-plane id="I" src="#eau" material="side: double" position="-1.42135 1.48425 -2.98917" rotation="0 -90 0" width="4" height="3"  geometry="width: 0.64">
+         </a-plane>
+         <a-plane id="J" src="#eau" material="side: double" position="-0.26463 1.48425 -5.43668" rotation="0 -180 0" width="4" height="3"  geometry="width: 2.31">
+         </a-plane>
+         <a-plane id="K" src="#eau" material="side: double" position="1.4333 1.48425 -3.98386" rotation="0 -90 0" width="4" height="3"  geometry="width: 2.74">
+         </a-plane>
+          <a-plane id="L" src="#eau" material="side: double" position="1.72184 1.48425 -4.05342" rotation="0 -180 0" width="4" height="3"  geometry="width: 0.57">
+         </a-plane>
+          <a-plane id="M" src="#eau" material="side: double" position="-0.25597 1.48425 -2.42311" rotation="0 -90 0" width="4" height="3"  geometry="width: 0.83">
+         </a-plane>
+          <a-plane id="N" src="#eau" material="side: double" position="-0.75345 1.48425 -3.95209" rotation="0 -90 0" width="4" height="3"  geometry="width: 1.3">
+         </a-plane>
+          <a-plane id="O" src="#eau" material="side: double" position="-0.01848 1.48425 -4.3034" rotation="0 -90 0" width="4" height="3"  geometry="width: 0.63">
+         </a-plane>
+          <a-plane id="P" src="#eau" material="side: double" position="-0.38038 1.48425 -4.59909" rotation="0 -180 0" width="4" height="3"  geometry="width: 0.74">
+         </a-plane>
+          <a-plane id="Q" src="#eau" material="side: double" position="-0.25971 1.48425 -2.837" rotation="0 -180 0" width="4" height="3"  geometry="width: 1.22">
+         </a-plane>
+          <a-plane id="R" src="#eau" material="side: double" position="-1.70538 1.48425 -6.00146" rotation="0 -180 0" width="4" height="3"  geometry="width: 0.59">
+         </a-plane>
+          <a-plane id="S" src="#eau" material="side: double" position="-0.8687 1.48425 -2.6619" rotation="0 -90 0" width="4" height="3"  geometry="width: 0.35">
+         </a-plane>
+         
+         
+         
+         
+         <!--panneaux d'arrivés et depart -->
+         <a-plane id="DEPART" src="#DEPART" material="side: double" position="-0.39654 1.64118 -4.58668" rotation="0 0.6531718864491385 0" width="4" height="3"  geometry="height: 0.68; width: 0.54">
+         </a-plane>
+
+         <a-plane id="ARRIVEE" src="#ARRIVEE" material="side: double" position="-1.08436 1.62444 -6.85711" rotation="0 0.4004974987964454 0" width="4" height="3"  geometry="height: 0.97; width: 0.74">
+         </a-plane>
+
+
+    <a-entity id="CHATS" rotation="0 90 0" color="#white"> 
+   
+        <!-- panneaux chats deco EMOTION PERTE DE REPERE-->
+          
+         <a-plane id="angrychat" src="#angrychat" material="side: double" position="4.25965 1.86711 -1.97353" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.1792 2.1792 2.1792">
+         </a-plane>
+         <a-plane id="chatbarbu" src="#chatbarbu" material="side: double" position="2.03117 2.14548 1.41103" rotation="0.040107045659157625 89.0576948861595 -2.9776616612948885" width="4" height="3"  geometry="height: 0.68; width: 0.54" scale="1.66868 1.66868 1.66868">
+         </a-plane>
+         <a-plane id="chatbigleux" src="#chatbigleux" material="side: double" position="2.02543 0.75853 -0.81567" rotation="0 90 0" width="4" height="3"  geometry="height: 0.68; width: 0.54" scale="2.17938 2.17938 2.17938">
+         </a-plane>
+         <a-plane id="chatlangue" src="#chatlangue" material="side: double" position="3.31075 2.24778 0.20836" rotation="0.36612003108859603 90.00364820592051 -0.4503448269728271" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.57645 2.57645 2.57645">
+         </a-plane>
+         <a-plane id="chatcoucou" src="#chatcoucou" material="side: double" position="5.42565 1.85671 -1.02303" rotation="0 -90.4534200750982 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.54423 3.18025 1.54423">
+         </a-plane>         
+         <a-plane id="chatcameraproche" src="#chatcameraproche" material="side: double" position="3.03844 1.19109 -1.98237" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.72285 3.72285 3.72285">
+         </a-plane>
+         <a-plane id="chatcanappleure" src="#chatcanappleure" material="side: double" position="5.00567 1.80957 1.99187" rotation="0 179.38219945735327 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.51653 3.51653 3.51653">
+         </a-plane>
+         <a-plane id="chatchoupi" src="#chatchoupi" material="side: double" position="3.30903 0.73213 0.33973" rotation="0 90.05063074512123 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.15911 2.15911 2.15911">
+         </a-plane>
+         <a-plane id="chatcolier" src="#chatcolier" material="side: double" position="5.17352 0.83448 -1.96345" rotation="0.12662367272391195 0.502483986329732 -0.0005729577951308233" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.56465 3.56465 3.56465">
+         </a-plane>
+         <a-plane id="chatblaze" src="#chatblaze" material="side: double" position="4.70948 1.64118 1.47253" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.2518 3.1949 2.26008">
+         </a-plane>
+         <a-plane id="chatcafesoleil" src="#chatcafesoleil" material="side: double" position="2.03471 1.96111 0.5039" rotation="0 88.99868023326106 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.829 2.829 2.829">
+         </a-plane>
+         <a-plane id="chatdetourassit" src="#chatdetoureassit" material="side: double" position="-0.39654 1.64118 -4.58668" rotation="0 0.6531718864491385 0" width="4" height="3"  geometry="height: 0.68; width: 0.54">
+         </a-plane>
+         <a-plane id="chatencourage" src="#chatencourage" material="side: double" position="3.78099 0.80645 -0.73611" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.75823 1.75823 1.75823">
+         </a-plane>
+         <a-plane id="chatestomaque" src="#chatestomaque" material="side: double" position="2.52455 2.41941 -1.97247" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.80415 1.80415 1.80415">
+         </a-plane>
+         <a-plane id="chatfumedecote" src="#chatfumedecote" material="side: double" position="5.98905 2.0645 1.4113" rotation="0 -89.60372366491917 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.23343 2.23343 2.23343">
+         </a-plane>
+         <a-plane id="chatdiscussion" src="#chatdiscussion" material="side: double" position="4.01347 1.04773 0.80862" rotation="0 -177.58941451638893 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.60091 2.60091 2.60091">
+         </a-plane>
+        <a-plane id="chatgroscoeur" src="#chatgroscoeur" material="side: double" position="5.45307 2.13889 -0.89183" rotation="0 88.83366838826336 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.91518 1.91518 1.91518">
+         </a-plane>
+
+
+         <a-plane id="chatgalant" src="#chatgalant" material="side: double" position="-0.39654 1.64118 -4.58668" rotation="0 0.6531718864491385 0" width="4" height="3"  geometry="height: 0.68; width: 0.54">
+         </a-plane>
+         <a-plane id="chatgardiens" src="#chatgardiens" material="side: double" position="-0.39654 1.64118 -4.58668" rotation="0 0.6531718864491385 0" width="4" height="3"  geometry="height: 0.68; width: 0.54">
+         </a-plane>
+         <a-plane id="chatgun" src="#chatgun" material="side: double" position="2.44395 1.76917 -0.24787" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.46806 1.46806 1.46806">
+         </a-plane>
+         <a-plane id="chatipadkid" src="#chatipadkid" material="side: double" position="4.29736 1.73539 -0.01219" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.03038 1.68038 1.68038">
+         </a-plane>
+         <a-plane id="chatjugeassit" src="#chatjugeassit" material="side: double" position="3.29672 2.11507 1.40879" rotation="-1.2988953215615762 -179.9047369665126 0.18506536782725588" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.4938 2.4938 2.4938">
+         </a-plane>
+         <a-plane id="chatlangue" src="#chatlangue" material="side: double" position="3.31075 2.24778 0.20836" rotation="0.36612003108859603 90.00364820592051 -0.4503448269728271" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.57645 2.57645 2.57645">
+         </a-plane>
+         <a-plane id="chatlunetterondes" src="#chatlunetterondes" material="side: double" position="4.65465 0.49683 1.4131" rotation="0 179.07910478372906 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.56813 2.17584 2.56813">
+         </a-plane>
+         <a-plane id="chatmenton" src="#chatmenton" material="side: double" position="2.99897 2.00445 -1.41362" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.21018 1.21018 1.21018">
+         </a-plane>
+        <a-plane id="chatmoque" src="#chatmoque" material="side: double" position="3.0718 2.36588 0.87032" rotation="-2.573153457932527 179.56038933163893 0.08193296470370773" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.34195 1.34195 1.34195">
+         </a-plane>
+         <a-plane id="chatnuit" src="#chatnuit" material="side: double" position="3.95998 1.83204 -0.77169" rotation="0.13693691303626676 0.06245239966925974 -0.08021409131831525" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.3372 2.6906 2.6906">
+         </a-plane>
+        <a-plane id="chatpanic" src="#chatpanic" material="side: double" position="4.79191 2.20788 0.85142" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.43096 2.43096 2.43096">
+         </a-plane>
+         <a-plane id="chatpleurerigole2" src="#chatpleurerigole2" material="side: double; src: " position="4.64428 1.14049 -1.40355" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.48542 2.48542 2.48542">
+         </a-plane>
+         <a-plane id="chatquivomis" src="#chatquivomis" material="side: double" position="5.40553 2.04343 0.10516" rotation="-0.40393524556723037 -88.5872965363571 -0.2240264978961519" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.78131 2.78131 2.78131">
+         </a-plane>
+         <a-plane id="chatrepas" src="#chatrepas" material="side: double" position="5.98868 1.2051 0.29091" rotation="0.0716197243913529 -89.5819512687042 -0.0005729577951308233" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.61101 3.61101 3.61101">
+         </a-plane>
+         <a-plane id="chatresponsable" src="#chatresponsable" material="side: double" position="3.24846 1.81477 -0.38925" rotation="0 -89.82431241604455 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.51661 3.51661 22.36563">
+         </a-plane>
+         <a-plane id="chatselfi" src="#chatselfi" material="side: double; src: " position="2.41648 1.84866 -0.28075" rotation="0 179.61424736438127 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1.50751 2.7745 1.97542">
+         </a-plane>
+         <a-plane id="chatsingevisage" src="#chatsingevisage" material="side: double" position="2.03265 2.11291 -1.31078" rotation="0 -91.02122125007284 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.51551 2.51551 2.51551">
+         </a-plane>
+         <a-plane id="chatstyle" src="#chatstyle" material="side: double" position="4.82923 1.89327 -1.43245" rotation="0.33116960558561587 -179.55465975368764 -0.5907194867798787" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.89984 2.89984 2.89984">
+         </a-plane>
+         <a-plane id="chattiktok" src="#chattiktok" material="side: double; src: " position="2.82316 1.68609 -0.56921" rotation="0 -92.08348500224538 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="1 2.06715 1">
+         </a-plane>
+         <a-plane id="chattube" src="#chattube" material="side: double" position="3.00029 1.49704 1.97816" rotation="0 -179.8789538657317 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.65805 1.66685 1.71523">
+         </a-plane>
+         <a-plane id="chatventdessus" src="#chatventdessus" material="side: double" position="3.94284 2.02442 -0.70346" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.41048 2.19945 3.03341">
+         </a-plane>
+         <a-plane id="chatvieux" src="#chatvieux" material="side: double" position="3.35829 1.87621 1.4349" rotation="0 -0.005729577951308232 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.63339 2.63339 2.63339">
+         </a-plane>
+         <a-plane id="chatvisage" src="#chatvisage" material="side: double" position="4.33701 1.64118 0.90454" rotation="0 0.6531718864491385 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="3.74789 3.74789 3.74789">
+         </a-plane>
+         <a-plane id="chatvomis" src="#chatvomis" material="side: double" position="5.43957 0.64853 -0.31751" rotation="0 89.8827541111479 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="4.29044 4.33795 4.33795">
+         </a-plane>
+         <a-plane id="chatdroitegauche" src="#chatdroitegauche" material="side: double" position="2.87775 1.95302 -0.27494" rotation="0 87.59665250857591 0" width="4" height="3" geometry="height: 0.68; width: 0.54" scale="2.20812 2.13841 1.17921">
+         </a-plane>
+
+    </a-entity>     
+        
+           
+    <a-plane id="sol" src="assets/images/texturesol.jpg" position="-0.01225 0 -4.00435" rotation="-90 0 0" width="4" height="4">
+     </a-plane>
+    
+    <a-plane id="toit" src="assets/images/texturesol.jpg" position="-0.01225 3.00888 -4.00435" rotation="90 0 0" width="4" height="4">
+     </a-plane>
+
+     <a-sky 
+      color="#ECECEC">
+      </a-sky>
+  
+    <!-- mes panneaux --> 
+        
+           <!-- <a-entity id="vitesselimite" obj-model="obj: #vitesselimite-obj;" position="-0.1295 2.97686 0.03566" scale="0.25848 0.24929 0.2409" rotation="87.29241191936146 -132.50565744872497 99.68491607024602" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN"><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44"></a-entity>
+      
+           <a-entity id="StopSign" obj-model="obj: #stopSign-obj;" position="-0.1295 2.97686 0.03566" scale="0.25848 0.24929 0.2409" rotation="87.29241191936146 -132.50565744872497 99.68491607024602" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN"><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44"></a-entity> -->
+
+      
+     
+     
+     
+           <!-- envirronement 
+            
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    
+     <a-plane id="texturesol" src="#texturesol" position="0 0 0" rotation="-90 0 0" width="4" height="4" >
+     </a-plane>
+
+      <a-sky 
+      color="#ECECEC">
+      </a-sky> -->
+
+      
+    </a-scene>
+
+ </body>
+
+</html>
