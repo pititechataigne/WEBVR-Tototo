@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.2/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
+  </head>
+</head>
+
+<body>
+
+    <a-scene physics background="color: white">
+       
+
+
+        
+        <a-assets>
+
+            <!--Mes elements 3D -->
+            <a-asset-item id="" src="./assets/.glb"></a-asset-item>
+            <a-asset-item id="" src="./assets/.glb"></a-asset-item>
+
+            <!--A frae look at me -->
+            <a-entity position ="0 1 -3" look-at="player">
+
+              <a-entity id="" position="-0.29694 1.29281 -0.50318" obj-model="./assets/.glb" scale="0.03171 0.00684 0.02005" rotation="-2.4259033045839056 -48.75641653445253 -0.38044397596686663" 
+              height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.31; width: 0.52"></a-entity>
+              </a-entity>
+
+            <a-asset-item id="" src="./assets/.glb"></a-asset-item>
+            <a-asset-item id="" src="./assets/.glb"></a-asset-item>
+            <a-asset-item id="" src="./assets/.glb"></a-asset-item>
+            
+            
+            <a-asset-item id="" src="./assets/"></a-asset-item>
+
+            <a-asset-item id="" src="./assets/"></a-asset-item>
+
+            <a-asset-item id="" src="./assets/"></a-asset-item>
+            <a-asset-item id="" src="./assets/"></a-asset-item>
+            <a-asset-item id="" src="./assets/"></a-asset-item>
+
+            <a-asset-item id="main3-obj" src="./assets/"></a-asset-item>
+           
+
+
+             <!--Mes img textures -->
+            <img id="eau" src="./assets/images/">
+            <img id="yeux1" src="./assets/images/">
+            <img id="yeux2" src="./assets/images/">
+            <img id="yeux3" src="./assets/images/">
+            <img id="yeux4" src="./assets/images/">
+            <img id="atmosphere" src="./assets/images/">
+            <img id="cielnoir" src="./assets/images/">
+
+
+             <!--Mes mixines -->
+             <a-mixin id="mur" src="#mur" material="side: double "> 
+             <!-- <a-mixin id="atmospheremain" src="#atmosphère" material="side: double"> 
+             <a-mixin id="cielnoirmain" src="#cielnoir" material="side: double">  -->
+            > 
+                  
+        </a-assets>
+
+
+        <!--Mes elements 3D -->
+
+
+       
+        
+        
+
+      
+        <a-entity id="female" gbl-model="#" position="-0.29694 1.29281 -0.50318"  scale="0.03171 0.00684 0.02005" rotation="-2.4259033045839056 -48.75641653445253 -0.38044397596686663" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.31; width: 0.52">
+        </a-entity>
+
+        <a-entity id="" gbl-model="./assets/" position="1.0575 1.20348 1.10261"  scale="0.01244 -0.01313 0.01803" rotation="0.32945073220022336 -53.796726258218385 -179.9763566909039" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.49; width: 0.04">
+        </a-entity>
+
+        <a-entity id="" gbl-model="./assets/" position="-1.06307 3.19006 1.14134" obj-model="" scale="2.37976 -2.04635 1.7708" rotation="0.7918276728707977 -0.19480565034447989 -0.07047380880109126" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.53; width: 0">
+        </a-entity>
+
+
+        <a-entity id="" gbl-model="./assets/" position="1.31321 1.27824 -0.29355" obj-model="" scale="0.36081 -0.72473 0.38352" rotation="-6.0000140306099805 -90.04432820937478 -1.4043195558656478" height="3" color="#7BC8A4" geometry="depth: 2.21; height: 1.6; width: 1.01">
+        </a-entity>
+        
+        
+        <a-entity id="globeocculaire1-obj" obj-model="obj: ./assets/3Dmodels/4mt7tt2wga9s-Eyeball/Eyeball/eyeball.obj" position="-0.1295 3.59061 0.03566" scale="0.74101 0.77463 0.48154" rotation="87.29241191936146 -132.50565744872497 99.68491607024602"></a-entity>
+      
+        <a-entity id="globeocculaire1-obj" obj-model="obj: ./assets/3Dmodels/4mt7tt2wga9s-Eyeball/Eyeball/eyeball.obj" position="-0.1295 2.97686 0.03566" scale="0.25848 0.24929 0.2409" rotation="87.29241191936146 -132.50565744872497 99.68491607024602" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN"><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44"></a-entity></a-entity>
+        
+        <a-entity id="main1" gltf-model="./assets/3Dmodels/4hz0a00fhmm8-FreeRealisticHand/hand.OBJ" position="1.36276 1.95865 1.57219" scale="0.05092 0.05092 0.05092" rotation="-64.34144151980605 -150.14817387639326 0"></a-entity>
+ 
+        <a-entity id="visage1-obj" obj-model="obj: ./assets/3Dmodels/28-face-obj.folder/untitled.obj" position="0.42142 2.15991 0.65288" scale="-2.0287 -2.0287 -2.0287" rotation="3.2429411204404595 3.2618487276797765 -38.23748437364575" geometry="depth: 1.97; height: 1.31; width: 0.38">
+        </a-entity>
+
+        
+        <a-entity id="main3-obj" src="#cielnoir"obj-model="obj: ./assets/3Dmodels/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/16834_hand_v1_NEW.obj" position="-1.52333 2.04136 -0.92606" scale="-0.04888 -0.04888 -0.04888" rotation="-0.004583662361046586 -83.0628374757057 -0.03552338329811104" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04" >
+        </a-entity>
+        <a-entity id="main3-obj" src="#atmosphère"obj-model="obj: ./assets/3Dmodels/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/16834_hand_v1_NEW.obj" position="-1.49906 1.80319 -0.81414" scale="-0.07029 -0.07029 -0.07029" rotation="-0.004583662361046586 -83.0628374757057 -0.03552338329811104" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04" >
+        </a-entity>
+        <a-entity id="main3-obj" src="#cielnoir"obj-model="obj: ./assets/3Dmodels/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/16834_hand_v1_NEW.obj" position="-1.51007 1.36053 -0.58904" scale="-0.09736 -0.09736 -0.09736" rotation="-0.004583662361046586 -83.0628374757057 -0.03552338329811104" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04" >
+        </a-entity>
+        <a-entity id="main3-obj" src="#atmosphère"obj-model="obj: ./assets/3Dmodels/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/16834_hand_v1_NEW.obj" position="-1.07642 1.3605 -0.6418" scale="-0.09736 -0.09736 -0.09736" rotation="-0.004583662361046586 -83.0628374757057 -0.03552338329811104" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04" >
+        </a-entity>
+        
+      
+        <a-entity id="main2-obj" obj-model="obj: ./assets/3Dmodels/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/hand_v1_L1.123c8a068500-0e0b-4d25-a1e4-f75b7a12ee9d/16834_hand_v1_NEW.obj" position="-1.51214 0.72575 -0.26972" scale="-0.13563 -0.13563 -0.13563" rotation="0 -85.15929004808939 0.0017188733853924698"></a-entity>
+
+        <a-entity position="0 1 -5" obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+
+        
+
+        <!--Mes murs planes -->
+
+      <a-entity position="0.43 0 4.09"> 
+         
+       
+         <a-plane id="B"  position="-0.42616 1.49668 -2.59146" width="4" height="3" color="#805050" geometry="width: 3" mixin="mur">
+         </a-plane>
+    
+         <a-plane id="C"  position="1.07239 1.49423 -4.08857" rotation="0 90 0" width="4" height="3" color="#805050" mixin="mur" geometry="width: 3">
+         </a-plane>
+    
+         <a-plane id="D"  position="-1.93155 1.49296 -4.08413" rotation="0 -90 0" width="4" height="3" color="#805050" mixin="mur" geometry="width: 3">
+         </a-plane>
+
+         <a-plane id="A"  position="-0.42616 1.49668 -5.57059" width="4" height="3" color="#805050" geometry="width: 3" mixin="mur">
+         </a-plane>
+      </a-entity>
+
+
+       
+       
+       <!--Sol, ciel et camera  -->
+
+       <a-plane id="sol" position="0 0 0" rotation="-90 0 0" width="3" height="3" color="#7BC8A4"></a-plane> 
+       
+       <a-plane id="toit" src=assetsimages/#cielnoir   position="0 2.98187 0" rotation="-90 0 0" width="3" height="3" color="#7BC8A4" material="side: double"></a-plane>   
+       <a-sky color="#ECECEC"></a-sky>
+    
+ 
+       <a-entity camera="" look-controls="" wasd-controls="acceleration: 10" position="0.07595 1.6 -0.01602" rotation="1.5602 -360.15261 -2.01"></a-entity>
+
+    </a-scene>
+
+</body>
+
+</html>
