@@ -1,7 +1,7 @@
-#DNMADE2
+# DNMADE2
 
-##WEBVR
+## WEBVR
 * [melicia_talavera_texture](../WEBVR-Tototo/test.html)
 * [melicia_talavera_labyrinthe](../WEBVR-Tototo/labyrinthe.html)
 * [melicia_talavera_whatamess!](../WEBVR-Tototo/whatamess!.html)
-* [melicia_talavera_labyrinthe](../WEBVR-Tototo/labyrintheV2.html)
+* [melicia_talavera_labyrintheV2](../WEBVR-Tototo/labyrintheV2.html)

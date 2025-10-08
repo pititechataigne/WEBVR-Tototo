@@ -1,0 +1,53 @@
+
+<html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.5.4/dist/aframe-extras.min.js"></script>
+    <!-- site pour A frame -->
+  </head>
+
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="male" src="./assets/3Dmodels/exp4_glb_female_male/male.glb"></a-asset-item>
+        <a-asset-item id="female" src="./assets/3Dmodels/exp4_glb_female_male/female.glb"></a-asset-item>
+
+        <a-asset-item id="fox" src="./assets/aframe_tutorial_2_3Danim/aframe_tutorial_2_3Danim/assets/3Danims/fox/fox.glb"></a-asset-item>
+    
+      </a-assets>
+
+    <!-- forme -->
+       <a-entity id="renard" position="0  0 -3"  scale="0.005 0.005 0.005" rotation="0 90 0" wasd-controls="acceleration:100"
+            gltf-model="#fox"  animation-mixer="clip : Run; timescale : 8">
+              <!-- des commandes pour mes modeles animes (ceux disponibles)  loop: pingpong"; timescale : 8 -->
+        </a-entity>
+
+       
+            
+       <a-entity gltf-model="#female" position="0 1 -5" scale="0.01 0.01 0.01" obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+           
+
+
+       
+
+      
+      
+      
+    <!-- envirronement -->  
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" look></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    
+      
+    </a-scene>
+
+ </body>
+
+</html>
+
+
+
+
