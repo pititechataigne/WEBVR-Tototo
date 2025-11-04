@@ -22,15 +22,20 @@
             
             <!--A frae look at me -->
             <a-entity position ="0 1 -3" look-at="player">
-
-              <a-entity id="" position="-0.29694 1.29281 -0.50318" obj-model="./assets/.glb" scale="0.03171 0.00684 0.02005" rotation="-2.4259033045839056 -48.75641653445253 -0.38044397596686663" 
-              height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.31; width: 0.52"></a-entity>
+              <a-asset-item id="DeeMainNoirBlanc" src="./assets/bijouxAsset/DeeMainNoirblanc.glb"></a-asset-item>
+              <a-asset-item id="DeeMainRate" src="./assets/bijouxAsset/DeeMainRATE.glb"></a-asset-item>
+              
             </a-entity>
             
 
             <a-asset-item id="teteLoup1" src="./assets/bijouxAsset/TeteLoup1.glb"></a-asset-item>
-            <a-asset-item id="DeeMainNoirBlanc" src="./assets/bijouxAsset/DeeMainNoirblanc.glb"></a-asset-item>
+            
             <a-asset-item id="OgreModelage" src="./assets/bijouxAsset/OgreModelage.glb"></a-asset-item>
+            
+            <a-asset-item id="chaine1" src="./assets/bijouxAsset/chaine.glb"></a-asset-item>
+            <a-asset-item id="pierre1" src="./assets/bijouxAsset/pierre1.glb"></a-asset-item>
+            <a-asset-item id="pierre2" src="./assets/bijouxAsset/pierre2.glb"></a-asset-item>
+            <a-asset-item id="plaque" src="./assets/bijouxAsset/plaque.glb"></a-asset-item>
             
             <a-asset-item id="DeePiednoirblanc" src="./assets/bijouxAsset/DeePiednoirBlanc.glb"></a-asset-item>
             <a-asset-item id="DeeMainTable" src="./assets/bijouxAsset/DeeMainTable.glb"></a-asset-item>
@@ -50,16 +55,25 @@
              <a-asset-item id="foetuspenduDos" src="./assets/bijouxAsset/foetuspenduDos.glb"></a-asset-item>
             <a-asset-item id="foetusNoir1" src="./assets/bijouxAsset/foetusNoir1.glb"></a-asset-item>
             <a-asset-item id="PetitCoeur" src="./assets/bijouxAsset/PetitCoeur.glb"></a-asset-item>
+             <a-asset-item id="coquillage" src="./assets/bijouxAsset/coquillage.glb"></a-asset-item>
             
 
              <!--Mes img textures -->
-            <img id="eau" src="./assets/images/">
-            <img id="yeux1" src="./assets/images/">
-            <img id="yeux2" src="./assets/images/">
-            <img id="yeux3" src="./assets/images/">
-            <img id="yeux4" src="./assets/images/">
-            <img id="atmosphere" src="./assets/images/">
-            <img id="cielnoir" src="./assets/images/">
+            <img id="chien" src="./assets/images/scanCarnet/chien.jpg">
+            <img id="coeurIMG" src="./assets/images/scanCarnet/coeurIMG.jpg">
+            <img id="deeIMG" src="./assets/images/scanCarnet/deeIMG.jpg">
+            <img id="Page2" src="./assets/images/scanCarnet/Page2.jpg">
+            <img id="Page5" src="./assets/images/scanCarnet/Page5.jpg">
+            <img id="Page7" src="./assets/images/scanCarnet/Page7.jpg">
+            <img id="Page8" src="./assets/images/scanCarnet/Page8.jpg">
+            <img id="Page9" src="./assets/images/scanCarnet/Page9.jpg">
+            <img id="phoetusIMG" src="./assets/images/scanCarnet/phoetusIMG.jpg">
+            <img id="poissonIMG" src="./assets/images/scanCarnet/poissonIMG.jpg">
+            <img id="poulpeIMG" src="./assets/images/scanCarnet/poulpeIMG.jpg">
+            <img id="tete1" src="./assets/images/scanCarnet/tete1img.jpg">
+            <img id="tete2" src="./assets/images/scanCarnet/tete2img.jpg">
+            <img id="tete3" src="./assets/images/scanCarnet/tete3img.jpg">
+            <img id="tete4" src="./assets/images/scanCarnet/tete4img.jpg">
 
 
              <!--Mes mixines -->
@@ -73,15 +87,12 @@
 
         <!--Mes elements 3D -->
 
-
-       
         
         
-
-      
-        <a-entity id="Orgre" gltf-model="#OgreModelage" position="-0.29694 1.29281 -0.50318"  scale=" -1.351 -1.351 -1.351" rotation="-2.4259033045839056 -48.75641653445253 -0.38044397596686663" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.31; width: 0.52">
+        <a-entity id="Orgre" gltf-model="#OgreModelage" position="0.2068 0.97599 -0.83071" scale="-2.05589 -2.05589 -2.05589" rotation="-208.04606 -86.05341 -93.69977" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.31; width: 0.52">
         </a-entity>
-        <a-entity id="teteLoup1" gltf-model="#teteLoup1" position="1.0575 1.20348 1.10261"  scale=" -1.351 -1.351 -1.351" rotation="0.32945073220022336 -53.796726258218385 -179.9763566909039" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.49; width: 0.04">
+        
+        <a-entity id="teteLoup1" gltf-model="#teteLoup1" position="0.12688 1.15676 1.25379" scale="-1.82934 -1.47607 -1.82934" rotation="-24.84936 58.54323000000001 139.88" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.49; width: 0.04">
         </a-entity>
         
         <a-entity id="foetuspenduDos" gltf-model="#foetuspenduDos" position="1.30499 0.94824 -0.81166" scale="3.14557 -2.70487 2.34064" rotation="40.894 -107.846 106" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.53; width: 0">
@@ -89,29 +100,61 @@
     
         <a-entity id="foetusNoir1" gltf-model="#foetusNoir1" position="1.02296 0.02728 -1.23687" scale="3.59602 -3.09221 2.67582" rotation="-0.46638764523649007 35.64083964611286 -162.64266451481112" height="3" color="#7BC8A4" geometry="depth: 1.95; height: 1.53; width: 0">
         </a-entity>
-        <a-entity id="DeePiednoirblanc" gltf-model="#DeePiednoirblanc" position="-1.27362 2.17293 0.16792" rotation="69.55478449770142 179.38391833073865 -92.37225573099133" height="3" color="#7BC8A4" geometry="depth: 2.21; height: 1.6; width: 1.01" scale="1.55292 1.55292 1.553">
+        <a-entity id="DeePiednoirblanc" gltf-model="#DeePiednoirblanc" position="-1.27362 2.17293 0.690" rotation="69.55478449770142 179.38391833073865 -92.37225573099133" height="3" color="#7BC8A4" geometry="depth: 2.21; height: 1.6; width: 1.01" scale="1.55292 1.55292 1.553">
         </a-entity>
-        <a-entity id="PetitCoeur" gltf-model="#PetitCoeur" position="0.27636 1.54079 0.33479" rotation="-13.635 -98.76016218890489 1.657566901313472"></a-entity>
         
+        
+        <a-entity id="PetitCoeur" gltf-model="#PetitCoeur" position="0.96072 -0.06264 0.19162" rotation="-5.6659796360487125 -4.928009995920211 -2.2184925827465474" scale="3.40272 3.40272 3.40272"></a-entity>
         <a-entity id="DeeMainNoirblanc" gltf-model="#DeeMainNoirBlanc" position="-1.2842 1.14767 -0.76188" scale="3.99893 5.08733 5.79228" rotation="-13.970429918674862 7.004409045474314 -69.36513546751311">
         </a-entity>
-        <a-entity id="Soleil" gltf-model="#Soleil"position="0.11464 1.36511 1.53741" rotation="47.48387727146697 92.6638912487129 -87.01338147313272" scale="2.38488 2.38488 2.38488"></a-entity>
+      
+        <a-entity id="DeeMainRate" gltf-model="#DeeMainRate" position="-1.3964 1.04575 0.87323" scale="3.76385 4.78826 5.45177" rotation="10.358503978170154 -153.4386704938296 78.27577509738768">
+        </a-entity>
+        <a-entity id="plaque" gltf-model="#plaque" position="-0.76223 2.2081 1.18779" scale="1.39568 0.46009 2.02158" rotation="-22.19523906777783 33.969521757716244 -96.5897980609493">
+        </a-entity>
+      
+        <a-entity id="pierre1" gltf-model="#pierre1" position="-0.39305 1.84629 -1.23064" scale="2.09903 2.67033 3.04036" rotation="29.700986183991613 -85.07907595677106 80.4323882382601">
+        </a-entity>
+        <a-entity id="pierre2" gltf-model="#pierre2" position="-0.3869 2.42534 -1.28707" scale="1.6774 2.13393 2.42963" rotation="-18.32548211946425 -98.28518017674142 98.17173453330551">
+        </a-entity>
+        
+        <a-entity id="chaine1" gltf-model="#chaine1" position="-1.1834 2.61086 1.01383" scale="1.72649 2.19638 2.50074" rotation="60.39720005812547 174.3768401590904 59.66553295374341">
+        </a-entity>
+      
+        <a-entity id="chaine2" gltf-model="#chaine1" position="-1.20847 2.55005 -0.97313" scale="1.72649 2.19638 2.50074" rotation="60.39720005812547 117.05470458743206 59.66553295374341">
+        </a-entity>
+        <a-entity id="chaine3" gltf-model="#chaine1" position="1.2363 2.22005 -1.27109" scale="1.27492 1.6219 1.84667" rotation="60.39720005812547 15.300837918968634 59.66553295374341">
+        </a-entity>
+        <a-entity id="chaine4" gltf-model="#chaine1" position="1.33333 2.3107 -0.73793" scale="1.27492 1.6219 1.84667" rotation="60.39720005812547 15.300837918968634 59.66553295374341">
+        </a-entity>
+        <a-entity id="chaine5" gltf-model="#chaine1" position="-0.87452 3.25359 1.46437" scale="1.48188 1.88521 2.14645" rotation="53.95142486290371 -159.3051853581741 59.61052900541085">
+        </a-entity>
+        <a-entity id="chaine6" gltf-model="#chaine1" position="0.14527 2.24028 1.41983" scale="1.35698 1.72631 1.96553" rotation="53.95142486290371 -119.39237239156581 59.61052900541085">
+        </a-entity>
+        
+        
+        <a-entity id="Soleil" gltf-model="#Soleil" position="-0.02322 2.96018 0.11963" rotation="0.9872062810104083 112.53979716180118 -176.39708934472168" scale="3.26456 3.26456 3.26456"></a-entity>
+       
+        <a-entity id="DeeMainTable" gltf-model="#DeeMainTable" position="-1.6641 1.96864 0.056" scale="1.94883 1.94883 1.94883" rotation="47.49132572280367 -3.079075191033044 -91.51797565845126">
+        </a-entity>
+        <a-entity id="Pied3" gltf-model="#Pied3" position="-0.90373 1.86621 -0.39864" rotation="-9.046430627320568 -43.478329325707385 74.88844861257425" scale="2.64648 2.64648 2.64648"></a-entity>
+        <a-entity id="teteLoup2" gltf-model="#teteLoup2" position="0.20624 0.87036 0.90032" rotation="13.461643396598692 121.43047 162.31378674040604" scale="2.84785 2.84785 2.84785"></a-entity>
+        <a-entity id="GrosCoeur" gltf-model="#GrosCoeur" position="1.06449 2.14444 1.0706" scale="3.36242 3.19684 3.21719" rotation="79.25094926470034 -77.19918740033687 57.26770458112091" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN" velocity=""><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44" position="0.80761 0.07608 3.30195" scale="2.22393 2.22393 2.22393"></a-entity>
+        </a-entity>
+        <a-entity id="GrosCoeur2" gltf-model="#GrosCoeur2" position="0.77705 -0.05146 0.85159" scale="3.0162 3.01644 3.03565" rotation="-7.5825234607613154 174.25193535975188 6.742567333099528" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN" velocity=""><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44" position="0.80761 0.07608 3.30195" scale="2.22393 2.22393 2.22393"></a-entity>
+        </a-entity>
+        <a-entity id="fleur" gltf-model="#fleur" position="-0.52772 1.19696 -1.04868" scale="-3.25396 -3.25396 -3.25396" rotation="-5.50528 -156.26023 5.696346399190644"></a-entity>
+        <a-entity id="Poisson1" gltf-model="#Poisson1" position="1.56053 2.59019 -0.93142" scale="-2.97382 -2.97382 -2.97382" rotation="-198.74256 -3.14366 -89.66559"></a-entity>
+        <a-entity id="Poisson2" gltf-model="#Poisson2" position="1.5323 2.01288 -0.88022" scale="-2.45139 -2.45139 -2.45139" rotation="-104.22 -0.0005729577951308233 -88.43718159403282"></a-entity>
 
-        <a-entity id="DeeMainTable" gltf-model="#DeeMainTable" position="-1.6641 1.96864 -0.41838" scale="1.94883 1.94883 1.94883" rotation="47.49132572280367 -3.079075191033044 -91.51797565845126">
+        <a-entity id="MainTorchon" gltf-model="#MainTorchon" position="-1.02425 2.65825 -0.16312" scale="-3.26356 -3.26356 -3.26356" rotation="0.21692 -78.80163 -89.6214"></a-entity>
+        <a-entity id="Hypocampe" gltf-model="#Hypocampe" position="0.38693 2.55104 -1.52134" scale="3.1004 3.1004 3.1004" rotation="-4.536679821845858 -82.9270464782597 -93.99258037562129" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04">
         </a-entity>
-        <a-entity id="Pied3" gltf-model="#Pied3" position="-0.1295 1.54079 0.33479" rotation="15.213000000000001 -84.47861618747396 168.7074227762709"></a-entity>
-        <a-entity id="teteLoup2" gltf-model="#teteLoup2" position="-0.1295 1.54079 0.33479" rotation="15.213000000000001 -84.47861618747396 168.7074227762709"></a-entity>
-        <a-entity id="GrosCoeur" gltf-model="#GrosCoeur" position="-0.16922 1.83746 -0.00075" scale="1.396 1.39611 1.405" rotation="-75.48833542407623 130.5071806593087 -5.584619629140134" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN" velocity=""><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44" position="0.80761 0.07608 3.30195" scale="2.22393 2.22393 2.22393"></a-entity>
+    
+        <a-entity id="Main3" gltf-model="#Main3" position="-1.54377 2.43082 -0.9628" scale="2.60165 2.60165 2.60165" rotation="-6.074498543976988 130.07631639737028 91.98035259912183" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04">
         </a-entity>
-        <a-entity id="GrosCoeur2" gltf-model="#GrosCoeur2" position="-0.16922 1.83746 -0.00075" scale="1.396 1.39611 1.405" rotation="-75.48833542407623 130.5071806593087 -5.584619629140134" color="0.000   -0.000  0.OOO" body="sphereRadius: NaN" velocity=""><a-entity material="shader: flat; transparent: true; src: #cielnoir" geometry="primitive: plane; height: 1.44; width: 1.44" position="0.80761 0.07608 3.30195" scale="2.22393 2.22393 2.22393"></a-entity>
-        </a-entity>
-        <a-entity id="fleur" gltf-model="#fleur" position="1.36276 1.95865 1.57219" scale="-1.100 -1.100 -1.100" rotation="-64.34144151980605 -150.14817387639326 0"></a-entity>
-        <a-entity id="Poisson1" gltf-model="#Poisson1" position="0.77556 1.88988 1.35754" scale="-1.1 -1.1 -1.1" rotation="-4.152798099108207 -101.4650959397175 -171.36766581906332"></a-entity>
-        <a-entity id="Poisson2" gltf-model="#Poisson2" position="1.05234 2.35989 0.1404" scale="-1.1 -1.1 -1.1" rotation="6.743713248689789 -86.91540569016537 176.36901441276027"></a-entity>
-        <a-entity id="MainTorchon" gltf-model="#MainTorchon" position="-1.252 0.6253 -1.09147" scale="-1.1 -1.1 -1.1" rotation="0.07333859777674538 -89.99218905001788 0.0011459155902616466"></a-entity>
-        <a-entity id="Hypocampe" gltf-model="#Hypocampe" position="-1.38882 0.73007 1.52629" scale="2.40539 2.40539 2.40539" rotation="2.279226109030415 57.17717724949024 -72.98107211258375" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04">
-        </a-entity>
-        <a-entity id="Main3" gltf-model="#Main3" position="0.084 1.629 -1.012" scale="1 1 1" rotation=" 21.355 102.946 102.946" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04" >
+        
+        <a-entity id="coquillage" gltf-model="#coquillage" position="0.1015 1.7617 -1.45586" scale="2.60165 2.60165 2.60165" rotation="-6.074498543976988 -172.89918200544798 91.98035259912183" depth:="1.95;=" height:=" 1.49;=" width:=" 0.04">
         </a-entity>
         
       
@@ -122,7 +165,7 @@
 
         <!--Mes murs planes -->
 
-      <a-entity position="0.43 0 4.09"> 
+        <a-entity position="0.43 0 4.09"> 
          
        
          <a-plane id="B"  position="-0.42616 1.49668 -2.59146" width="4" height="3" color="#805050" geometry="width: 3" mixin="mur">
@@ -131,12 +174,48 @@
          <a-plane id="D"  position="-1.93155 1.49296 -4.08413" rotation="0 -90 0" width="4" height="3" color="#805050" mixin="mur" geometry="width: 3">
          </a-plane>
     
-         <!-- <a-plane id="C"  position="1.07239 1.49423 -4.08857" rotation="0 90 0" width="4" height="3" color="#805050" mixin="mur" geometry="width: 3">
+         <a-plane id="C"  position="1.07239 1.49423 -4.08857" rotation="0 90 0" width="4" height="3" color="#805050" mixin="mur" geometry="width: 3">
          </a-plane>
 
          <a-plane id="A"  position="-0.42616 1.49668 -5.57059" width="4" height="3" color="#805050" geometry="width: 3" mixin="mur">
-         </a-plane> -->
+         </a-plane> 
          </a-entity>
+        
+       
+        <!--Mes images murs -->
+
+         
+         
+         <a-plane id="chien" src="#chien" material="side: double" position="0.30965 1.41085 1.49063" width="4" height="3" geometry="width: 3" rotation="0 -180 90" scale="0.85034 0.85034 0.85034">
+         </a-plane>
+         <a-plane id="coeurIMG" src="#coeurIMG" material="side: double" position="1.50047 2.23352 0.74361" width="4" height="3" geometry="width: 3" rotation="0 -89.89879692941155 90.00021045914971" scale="0.50203 0.50203 0.50203">
+         </a-plane>
+         <a-plane id="deeIMG" src="#deeIMG" material="side: double" position="-1.46637 2.25585 0.75837" width="4" height="3" geometry="width: 3" rotation="-0.0469825392007275 90.43565838344914 89.91655862106062" scale="0.48707 0.48707 0.48707">
+         </a-plane>
+         <a-plane id="Page2" src="#Page2" material="side: double" position="-1.4937 1.47357 -1.29824" width="4" height="3" geometry="width: 3" rotation="0 89.95838454010519 90.00021045914971" scale="1.01262 1.01262 1.01262"> 
+         </a-plane>
+         <a-plane id="Page5" src="#Page5" material="side: double" position="1.48743 2.4713 -0.63642" width="4" height="3" geometry="width: 3" rotation="-0.0005729577951308233 -89.72347184410152 90.00021045914971" scale="0.43141 0.43141 0.43141">
+         </a-plane>
+         <a-plane id="Page7" src="#Page7" material="side: double" position="-0.68202 2.08192 1.48488" width="4" height="3" geometry="width: 3" rotation="0 179.80733414134033 90.00021045914971" scale="0.62655 0.62655 0.62655">
+         </a-plane>
+         <a-plane id="Page8" src="#Page8" material="side: double" position="-1.50992 0.76215 0.72867" width="4" height="3" geometry="width: 3" rotation="0 90.04662004055531 90.00021045914971" scale="0.51006 0.51006 0.51006">
+         </a-plane>
+         <a-plane id="Page9" src="#Page9" material="side: double" position="-0.16778 1.48624 -1.46986" width="4" height="3" geometry="width: 3" rotation="0 0.2291831180523293 90.00021045914971" scale="0.98491 0.98491 0.98491">
+         </a-plane>
+         <a-plane id="phoetusIMG" src="#phoetusIMG" material="side: double" position="-1.46751 0.78559 0.72694" width="4" height="3" geometry="width: 3" rotation="0 90.08042455046802 90.00021045914971" scale="0.51215 0.51215 0.51215">
+         </a-plane>
+         <a-plane id="poissonIMG" src="#poissonIMG" material="side: double" position="1.49486 0.91142 -0.60006" width="4" height="3" geometry="width: 3" rotation="0 -90.12225046951258 90.00021045914971" scale="0.61211 0.61211 0.61211">
+         </a-plane>
+         <a-plane id="poulpeIMG" src="#poulpeIMG" material="side: double" position="1.49342 0.53713 1.27621" width="4" height="3" geometry="width: 3" rotation="0 -90.18183808020619 90.00021045914971" scale="0.6445 0.6445 0.6445">
+         </a-plane>
+         <a-plane id="tete1" src="#tete1" material="side: double" position="0.70443 0.0122 -0.70172" width="4" height="3" geometry="width: 3" rotation="-89.6839377562375 179.9998479605043 -90.00021045914971" scale="0.53179 0.53179 0.53179">
+         </a-plane>
+         <a-plane id="tete2" src="#tete2" material="side: double" position="-0.71508 0.0122 0.68319" width="4" height="3" geometry="width: 3" rotation="-89.6839377562375 179.9998479605043 -90.00021045914971" scale="0.53179 0.53179 0.53179">
+         </a-plane>
+         <a-plane id="tete3" src="#tete3" material="side: double" position="-0.7547 0.00606 -0.6921" width="4" height="3" geometry="width: 3" rotation="-89.6839377562375 179.9998479605043 -90.00021045914971" scale="0.53179 0.53179 0.53179">
+         </a-plane>
+         <a-plane id="tete4" src="#tete4" material="side: double" position="0.70549 0.0122 0.71098" width="4" height="3" geometry="width: 3" rotation="-89.6839377562375 179.9998479605043 -90.00021045914971" scale="0.53179 0.53179 0.53179">
+         </a-plane>
 
 
        
@@ -149,7 +228,7 @@
        <a-sky color="#ECECEC"></a-sky>
     
  
-       <a-entity camera="" look-controls="" wasd-controls="acceleration: 10" position="0.07595 1.6 -0.01602" rotation="1.5602 -360.15261 -2.01"></a-entity>
+       <a-entity camera="" look-controls="" wasd-controls="acceleration: 10" position="0.07595 1.60 -0.01602" rotation="1.5602 -360.15261 -2.01"></a-entity>
 
     </a-scene>
 
